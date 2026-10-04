@@ -10,7 +10,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-api_key=os.getenv("GROQ_API_KEY")
+api_key="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"
 
 #ARXIV AND WIKIPEDIA TOOLS
 arxiv_wrapper=ArxivAPIWrapper(top_k_results=1,doc_content_chars_max=250)
