@@ -50,4 +50,4 @@ if prompt:=st.chat_input(placeholder="What is Machine Learning"):
         st_cb=StreamlitCallbackHandler(st.container(),expand_new_thoughts=False)
         response=search_agent.invoke({"input": latest_user_message},callbacks=[st_cb])
         st.session_state.messages.append({'role':'assistant',"content":response})
-        st.write(response["content"])
+        st.write(response)
